@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form for Pets</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body class="bg-light">
+    <h1 class="text-center text-danger mt-3 fw-bold">Add your pet!</h1>
+    <div class="d-flex justify-content-center mt-5">
+      <form id="petForm">
+        <label class="form-label fw-semibold text-dark" for="petName">Pet Name:</label>
+        <input class="form-control" type="text" id="petName" placeholder="Insert your pets name!" required />
+
+        <label class="form-label fw-semibold text-dark" for="ownerName">Owner Name:</label>
+        <input class="form-control" type="text" id="ownerName" placeholder="Insert the owners name!" required />
+
+        <label class="form-label fw-semibold text-dark" for="species">Species:</label>
+        <input class="form-control" type="text" id="species" placeholder="Insert your pets species!" required />
+
+        <label class="form-label fw-semibold text-dark" for="breed">Breed:</label>
+        <input class="form-control" type="text" id="breed" placeholder="Insert your pets breed!" required />
+
+        <button class="btn btn-primary mt-3" type="button" onclick="createPet()">Create Pet</button>
+      </form>
+    </div>
+    <div class="mt-5 ms-5">
+      <h3 class="fw-bold text-danger fs-1">Pets list:</h3>
+      <ul class="mt-2" id="petList"></ul>
+    </div>
+
+    <script src="pets.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
